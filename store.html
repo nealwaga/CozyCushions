@@ -95,16 +95,16 @@
                         </ul>
                         <p class="address mb-5">
                             <em>
-                                <strong>Dennis Pritt Road</strong>
+                                <strong>Pillow Street</strong>
                                 <br>
-                                Nairobi, Kenya
+                                Cityville, Pillowland
                             </em>
                         </p>
                         <p class="mb-0">
                             <small>
                                 <em>Call Anytime</em>
                             </small>
-                            <br> +254 729223927
+                            <br> +254 111 111 111
                         </p>
                     </div>
                 </div>
@@ -112,149 +112,48 @@
         </div>
     </section>
 
-    <div id="order"></div>
-    <div class="order mt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="order-section"></div>
-                    <h1 class="text-center pt-4"> Place Your Order</h1>
-                    <p>To buy more than one pillow, make another selection then press order now to add to the first order
-                    </p>
-                    <div class="alert alert-success mt-2" id="success">
-                        <strong>Success!</strong> Your order will be delivered to your location in
-                        <span style="color: red; font-size:18px" id="place"></span> the delivery fee is ksh 200. Thank you for shopping with us.
-                    </div>
-                    <div class="alert alert-success" id="no-delivery">
-                        <strong>Success!</strong> We will be waiting for you to pick your pillows. Thank you for shopping with us.
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <card-title>
-                                    <h3 class="pt-4 pl-5">Let us know what you want</h3>
-                                </card-title>
-                                <div class="card-body">
-                                    <div id="pizza">
-                                        <img class="pl-5" src="./assets/pizza1.jpeg" alt="" />
-                                    </div>
-                                    <form id="myform">
-                                        <div class="form-group">
-                                            <label for="pizza-size">Pizza Size</label>
-                                            <select class="form-control" id="pizza-size">
-                                                <option value="small">Small -- ksh 600</option>
-                                                <option value="medium">Medium -- ksh 800</option>
-                                                <option value="large"> Large -- ksh 1200</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="pizza-crust">Which crust do you want</label>
-                                            <select class="form-control" id="pizza-crust">
-                                                <option value="crispy">Crispy -- ksh 300</option>
-                                                <option value="stuffed">Stuffed -- ksh 200</option>
-                                                <option value="gluten-free">
-                                                    Gluten-free -- ksh 100</option>
-                                            </select>
-                                        </div>
-                                        <p>Toppings</p>
-                                        <div class="toppings">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
-                                                <label class="form-check-label" for="inlineCheckbox1">Pepperoni ksh.
-                                                    100</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
-                                                <label class="form-check-label" for="inlineCheckbox2">Veges ksh.
-                                                    50</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
-                                                <label class="form-check-label" for="inlineCheckbox2">Bacon ksh.
-                                                    75</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
-                                            Order Now
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mt-1">
-                                <div class="card-title d-inline-flex">
-                                    <h3 class="p-4">View items in cart</h3>
-                                    <i class="p-4 fa fa-shopping-cart total"><button class="btn-success btn ml-2"
-                                            value="0" id="quantity">
-                                            0
-                                        </button></i>
-                                </div>
-                                <div class="card-body">
-                                    <table id="table">
-                                        <tr>
-                                            <td>Size</td>
-                                            <td>Crust</td>
-                                            <td>Toppings</td>
-                                            <td>Total Price</td>
-                                        </tr>
-                                    </table>
-
-                                    <div id="cart">
-                                        <img id="cart" src="img/shopping cart.png" alt="" />
-                                        <p class="text-center pt-4">
-                                            You do not have any item in the cart
-                                        </p>
-                                    </div>
-
-                                    <div id="items"></div>
-                                    <a href="#order-section">
-                                        <div class="checkout">
-                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
-                                                Checkout
-                                            </button>
-                                        </div>
-                                    </a>
-                                    <!-- </a> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLongTitle">
-                        Confirm the price
-                    </h3>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Amount you are to pay for your order is ksh
-                        <span id="money" style="color: red"></span>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" id="myModel" data-dismiss="modal">
-                        Confirm checkout
-                    </button>
-
-                </div>
-            </div>
-        </div>
-    </div><br><br>
+    
 
     <footer class="footer text-faded text-center py-5">
         <div class="container">
-            <p class="m-0 small">Copyright &copy; CozyCushions 2024</p>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="white-text">Contact Us</h4>
+                    <p class="white-text">
+                        Kileleshwa <br>
+                        Nairobi, Kenya <br>
+                        <br>
+                        <strong>Phone:</strong> +254 111 111 111 <br>
+                        <strong>Email:</strong> cozycushions@gmail.com <br>
+                    </p>
+                </div>
+
+                <div class="col-lg-13 col-md-6">
+                    <h3 class="white-text">Cozy Cushions</h3>
+                    <p class="white-text">We take pride in crafting pillows that elevate your sleep experience to new heights.</p>
+
+                    <div class="mt-3">
+                        <h3 class="white-text">Connect With Us</h3>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram white-text" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube white-text" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok white-text" viewBox="0 0 16 16">
+                            <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook white-text" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="m-0 small white-text">Copyright &copy; CozyCushions 2024</p>
         </div>
     </footer>
 
@@ -262,6 +161,12 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+
+    <style>
+        .white-text {
+            color: gray;
+        }
+    </style>
 </body>
 
 
